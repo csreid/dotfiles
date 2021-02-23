@@ -1,0 +1,9 @@
+[submodule "nvim/bundle/Vundle.vim"]
+	path = nvim/bundle/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim.git
+[submodule "nvim/bundle/ctrlp.vim"]
+	path = nvim/bundle/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule "nvim/bundle/vim-colorschemes"]
+	path = nvim/bundle/vim-colorschemes
+	url = https://github.com/flazz/vim-colorschemes.git
