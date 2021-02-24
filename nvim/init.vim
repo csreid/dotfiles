@@ -10,6 +10,7 @@ Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'junegunn/fzf.vim'
 Plugin 'preservim/nerdtree'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 call vundle#end()
 
