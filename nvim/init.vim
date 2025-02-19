@@ -1,6 +1,8 @@
 set nocompatible
 filetype off
 
+let g:python3_host_prog = expand(system('pyenv which python'))
+
 set rtp+=~/.config/nvim/bundle/Vundle.vim
 
 call vundle#begin()
@@ -13,6 +15,10 @@ Plugin 'preservim/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'peitalin/vim-jsx-typescript'
+Plugin 'leafOfTree/vim-svelte-theme'
+Plugin 'othree/html5.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'evanleck/vim-svelte', {'branch': 'main'}
 
 call vundle#end()
 
@@ -71,5 +77,10 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:NERDTreeChDirMode = 2
 let g:ctrlp_working_path_mode = 'rw'
 let g:ctrlp_custom_ignore = { 'dir':  '\v[\/](node_modules|reports|dist|docs|src/libraries)$' }
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 color asu1dark
+
+let g:python_recommended_style = 0
+set noexpandtab
+
